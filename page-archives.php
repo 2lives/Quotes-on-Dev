@@ -32,12 +32,24 @@ get_header(); ?>
           </div>
 
           <div class="category-archives">
-            <h2>Categories</h2>
-            <ul>
-              <?php wp_list_categories( 'title_li=' );?><!--this title_li removes the second ul title-->
-            </ul>
+                <h2>Categories</h2>
+                <ul>
+                  <?php wp_list_categories( 'title_li=' );?><!--this title_li removes the second ul title-->
+               </ul>
           </div>
 
+          <div>
+              <h2>Tags</h2>
+              <?php wp_tag_cloud(
+                              array(
+                                'smallest' => 1,
+                                'largest' => 1.5,
+                                'unit' => 'rem',
+                                'format' => 'list'
+                              )
+              );
+              ?>
+          </div>
       </section>
 
   </main><!-- #main -->
