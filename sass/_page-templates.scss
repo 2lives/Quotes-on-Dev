@@ -5,3 +5,99 @@
 /* All Archives Page */
 
 /* Submit a Quote Page */
+//index.php
+body.home{
+  .entry-content{
+    p{
+      font-size: 1.25rem;
+    }
+  }
+  .entry-meta{
+    display: flex;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    h2{
+      margin: 0;
+      font-size: 1.25rem;
+    }
+    .source{
+      color: #fff;
+      font-size: 1.25rem;
+      font-style: italic;
+      a{
+        color: $color__green;
+         font-style: italic;
+        text-decoration: none;
+        font-size: 1.25rem;
+      }
+    }
+  }
+  #new-quote-button{
+    box-shadow: none;
+    text-shadow: none;
+    background-color: #222;
+    color: #0c0;
+    border-color: #0c0;
+    border-radius: 3px;
+    padding: .75rem 2.25rem;
+    font-size: 1rem;
+    &:hover{
+      border-color: darken(#0c0, 10%);
+      color: darken(#0c0, 10%);
+    }
+  }
+  .site-info{
+    margin: 4.5rem 0 3rem;
+    a{
+      text-decoration: none;
+    }
+  }
+  .menu{
+    font-size: 1rem;
+  }
+}
+
+//page-archives.php
+
+body.page-template-default{
+  h1{
+    color: #fff;
+  }
+  ul{
+    list-style:none;
+    margin-bottom: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+footer{
+  padding: 2.5%;
+  background-color: #222;
+  ul{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li:first-child{
+      padding-left: 0;
+    }
+    li:last-child{
+      border-right: none;
+    }
+    li{
+      border-right: 1px solid #fff;
+      padding: 0 1rem;
+    }
+    a{
+      text-decoration: none;
+      font-weight: 300;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+} 

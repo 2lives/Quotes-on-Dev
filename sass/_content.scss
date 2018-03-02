@@ -31,3 +31,29 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+
+.hfeed {
+	margin: 0 auto;
+	height: 100vh;
+	width: 100%;
+	background-color: #222222;
+}
+
+p{
+	color: #fff;
+	font-size: $text__font-size;
+	font-weight: 300;
+}
+
+h2{
+	color: #fff;
+	font-weight: 300;
+	font-size: $text__font-size;
+}
+
+#content{
+	background-color: #222;
+	width: 100%;
+	padding: 2.5%;
+}

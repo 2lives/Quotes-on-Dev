@@ -29,7 +29,6 @@ a {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
 
 	ul {
@@ -120,12 +119,10 @@ a {
 	}
 
 	.nav-previous {
-		float: left;
 		width: 50%;
 	}
 
 	.nav-next {
-		float: right;
 		text-align: right;
 		width: 50%;
 	}
