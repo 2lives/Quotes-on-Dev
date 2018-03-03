@@ -60,13 +60,43 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
-
+.quote-submission-wrapper{
+  width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 25%;
+	#quote-content{
+		width: 100%;
+	}
+	// header{
+	// 	padding-left: 15%;
+	// }
+}
 #quote-submission-form{
 	display: flex;
 	flex-direction: column;
+	width: 80%;
+	input{
+		border-color: #0c0;
+		border-radius: 3px;
+		background-color: #222;
+	}
+	textarea{
+		border-color: #0c0;
+		border-radius: 3px;
+		background-color: #222;
+	}
+	.subform1{
+		width: 60%;
+	}
+	.subform2{
+		width: 75%;
+	}
 	div{
 		display: flex;
 		flex-direction: column;
+		margin: 20px 0px;
 		label{
 			color: #fff;
 		}

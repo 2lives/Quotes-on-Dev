@@ -14,7 +14,6 @@ body.home{
   }
   
   .site-info{
-    margin: 4.5rem 0 3rem;
     a{
       text-decoration: none;
     }
@@ -53,8 +52,10 @@ body.page-template-default{
 }
 
 footer{
-  padding: 2.5%;
   background-color: #222;
+  .site-info{
+    padding: 2.5%;
+  }
   .menu ul{
     display: flex;
     justify-content: flex-start;
@@ -86,11 +87,99 @@ footer{
   }
 } 
 
-//single.php
-body.post-template-default{
-  .sitefooter{
-    a{
-    text-decoration: none;
+
+
+
+
+
+@media only screen and (min-width: 620px) {
+
+	body.home{
+		.entry-content{
+			p{
+				font-size: 1.75rem;
+			}
+		}
+		
+		.site-info{
+			a{
+				text-decoration: none;
+			}
+		}
+		.menu{
+			font-size: 1rem;
+		}
+	}
+
+//page-archives page
+body.page-template-default{
+  .entry-content{
+    p{
+      font-size: 1rem;
     }
+  }
+	li{
+		font-size: 1.25rem;
+		}
+	}
+
+	footer{
+		.site-info{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+      font-size: 1rem;
+      padding: 2.5%;
+			 .menu ul{
+				display: inline-flex;
+				padding: 0;
+				li{
+					font-size: 1rem;
+				}
+			}
+		p{
+			margin-top: 20px;
+			font-size: 1rem;
+		}
+		}		
+	}
+}
+
+@media only screen and (min-width: 1080px) {
+.site-content{
+  position: relative;
+  margin: 4.5rem 220px 2.0rem;
+}
+#primary.content-area::before{
+  content: "\f10d";
+  left: -175px;
+  color: #0c0;
+  font-family: FontAwesome;
+  font-size: 125px;
+  line-height: 125px;
+  position: absolute;
+  top: 0;
+}
+
+#primary.content-area::after{
+  content: "\f10e";
+  right: -175px;
+  color: #0c0;
+  font-family: FontAwesome;
+  font-size: 125px;
+  line-height: 125px;
+  position: absolute;
+  top: 0;
+  }
+}
+
+footer{
+  .site-info{
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10%;
   }
 }

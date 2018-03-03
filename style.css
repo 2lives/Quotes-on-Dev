@@ -431,6 +431,22 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.quote-submission-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 25%; }
+  .quote-submission-wrapper #quote-content {
+    width: 100%; }
+
 #quote-submission-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,7 +454,20 @@ textarea {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  width: 80%; }
+  #quote-submission-form input {
+    border-color: #0c0;
+    border-radius: 3px;
+    background-color: #222; }
+  #quote-submission-form textarea {
+    border-color: #0c0;
+    border-radius: 3px;
+    background-color: #222; }
+  #quote-submission-form .subform1 {
+    width: 60%; }
+  #quote-submission-form .subform2 {
+    width: 75%; }
   #quote-submission-form div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,7 +475,8 @@ textarea {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin: 20px 0px; }
     #quote-submission-form div label {
       color: #fff; }
 
@@ -610,11 +640,24 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+a {
+  text-decoration: none; }
+
+.logo img {
+  width: 300px; }
+  @media only screen and (min-width: 620px) {
+    .logo img {
+      width: 500px; } }
+  @media only screen and (min-width: 1080px) {
+    .logo img {
+      width: 700px; } }
+
 .hfeed {
   margin: 0 auto;
   height: 100vh;
   width: 100%;
-  background-color: #222222; }
+  background-color: #222222;
+  padding: 2.5%; }
 
 .logo {
   padding: 2.5%; }
@@ -642,10 +685,11 @@ h2 {
   text-shadow: none;
   background-color: #222;
   color: #0c0;
-  border-color: #0c0;
+  border: 2px solid #0c0;
   border-radius: 3px;
   padding: .75rem 2.25rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  outline: none; }
   #new-quote-button:hover {
     border-color: #009900;
     color: #009900; }
@@ -670,6 +714,16 @@ h2 {
     text-decoration: none;
     font-size: 1.25rem; }
 
+@media only screen and (min-width: 620px) {
+  #new-quote-button {
+    font-size: 1.25rem; } }
+
+@media only screen and (min-width: 1080px) {
+  #content {
+    background-color: #222;
+    width: 60%;
+    padding: 2.5%; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -687,37 +741,17 @@ iframe,
 object {
   max-width: 100%; }
 
-@media only screen and (min-width: 620px) {
-  body.page-template-default li {
-    font-size: 1.25rem; }
-  footer .site-info {
+@media only screen and (min-width: 1080px) {
+  .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    font-size: 1rem;
-    margin: 4.5rem 0 3rem; }
-    footer .site-info .menu ul {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      padding: 0; }
-      footer .site-info .menu ul li {
-        font-size: 1rem; }
-    footer .site-info p {
-      margin-top: 20px;
-      font-size: 1rem; } }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -727,10 +761,8 @@ object {
 body.home .entry-content p {
   font-size: 1.25rem; }
 
-body.home .site-info {
-  margin: 4.5rem 0 3rem; }
-  body.home .site-info a {
-    text-decoration: none; }
+body.home .site-info a {
+  text-decoration: none; }
 
 body.home .menu {
   font-size: 1rem; }
@@ -761,8 +793,9 @@ body.page-template-default a {
   text-decoration: none; }
 
 footer {
-  padding: 2.5%;
   background-color: #222; }
+  footer .site-info {
+    padding: 2.5%; }
   footer .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -791,5 +824,75 @@ footer {
     margin-bottom: 0;
     font-size: 1rem; }
 
-body.post-template-default .sitefooter a {
-  text-decoration: none; }
+@media only screen and (min-width: 620px) {
+  body.home .entry-content p {
+    font-size: 1.75rem; }
+  body.home .site-info a {
+    text-decoration: none; }
+  body.home .menu {
+    font-size: 1rem; }
+  body.page-template-default .entry-content p {
+    font-size: 1rem; }
+  body.page-template-default li {
+    font-size: 1.25rem; }
+  footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    font-size: 1rem;
+    padding: 2.5%; }
+    footer .site-info .menu ul {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      padding: 0; }
+      footer .site-info .menu ul li {
+        font-size: 1rem; }
+    footer .site-info p {
+      margin-top: 20px;
+      font-size: 1rem; } }
+
+@media only screen and (min-width: 1080px) {
+  .site-content {
+    position: relative;
+    margin: 4.5rem 220px 2.0rem; }
+  #primary.content-area::before {
+    content: "\f10d";
+    left: -175px;
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    top: 0; }
+  #primary.content-area::after {
+    content: "\f10e";
+    right: -175px;
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    top: 0; } }
+
+footer .site-info {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 10%; }

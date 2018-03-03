@@ -21,7 +21,7 @@
 					);
 					?>
 
-						<p>Brought to you by &copy; <a href="#">Cirque du Soleil</a> <?php echo date( 'Y' ); ?></p>
+						<p>Brought to you by &copy; <a href="#"id ="plug-link">Cirque du Soleil</a> <?php echo date( 'Y' ); ?></p>
 
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

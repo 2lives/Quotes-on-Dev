@@ -24,7 +24,7 @@
 									<?php echo $source; ?>
 								</a>
 					</span>
-
+					
 			<?php elseif ($source): ?>
 							<span class="source">, <?php echo $source; ?>
 

@@ -32,12 +32,30 @@
 	margin: 0 0 $base__space-unit;
 }
 
+a{
+	text-decoration: none;
+}
+
+.logo{
+	img{
+		width: 300px;
+		@media only screen and (min-width: 620px){
+			width: 500px;
+		}
+		@media only screen and (min-width: 1080px){
+					width: 700px;
+			}
+		}
+	}
+
+
 
 .hfeed {
 	margin: 0 auto;
 	height: 100vh;
 	width: 100%;
 	background-color: #222222;
+	padding: 2.5%;
 }
 .logo{
 	padding: 2.5%;
@@ -69,10 +87,11 @@ h2{
 	text-shadow: none;
 	background-color: #222;
 	color: #0c0;
-	border-color: #0c0;
+	border: 2px solid #0c0;
 	border-radius: 3px;
 	padding: .75rem 2.25rem;
 	font-size: 1rem;
+	outline: none;
 	&:hover{
 		border-color: darken(#0c0, 10%);
 		color: darken(#0c0, 10%);
@@ -98,5 +117,18 @@ h2{
 		 font-style: italic;
 		text-decoration: none;
 		font-size: 1.25rem;
+	}
+}
+
+@media only screen and (min-width: 620px){
+	#new-quote-button{
+		font-size: 1.25rem;
+	}
+}
+@media only screen and (min-width: 1080px){
+#content{
+	background-color: #222;
+	width: 60%;
+	padding: 2.5%;
 	}
 }
