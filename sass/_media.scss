@@ -18,3 +18,36 @@ iframe,
 object {
 	max-width: 100%;
 }
+
+
+@media only screen and (min-width: 620px) {
+//page-archives page
+body.page-template-default{
+	li{
+		font-size: 1.25rem;
+		}
+	}
+
+	footer{
+		.site-info{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+			font-size: 1rem;
+			margin: 4.5rem 0 3rem;
+			 .menu ul{
+				display: inline-flex;
+				padding: 0;
+				li{
+					font-size: 1rem;
+				}
+			}
+		p{
+			margin-top: 20px;
+			font-size: 1rem;
+		}
+		}		
+	}
+}

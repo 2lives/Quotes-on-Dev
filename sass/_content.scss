@@ -39,6 +39,12 @@
 	width: 100%;
 	background-color: #222222;
 }
+.logo{
+	padding: 2.5%;
+	img{
+		padding: 0;
+	}
+}
 
 p{
 	color: #fff;
@@ -56,4 +62,41 @@ h2{
 	background-color: #222;
 	width: 100%;
 	padding: 2.5%;
+}
+
+#new-quote-button{
+	box-shadow: none;
+	text-shadow: none;
+	background-color: #222;
+	color: #0c0;
+	border-color: #0c0;
+	border-radius: 3px;
+	padding: .75rem 2.25rem;
+	font-size: 1rem;
+	&:hover{
+		border-color: darken(#0c0, 10%);
+		color: darken(#0c0, 10%);
+	}
+}
+
+.entry-meta{
+	display: flex;
+	margin-bottom: 3rem;
+	font-weight: 300;
+	h2{
+		margin: 0;
+		font-size: 1.25rem;
+	}
+}
+
+.source{
+	color: #fff;
+	font-size: 1.25rem;
+	font-style: italic;
+	a{
+		color: $color__green;
+		 font-style: italic;
+		text-decoration: none;
+		font-size: 1.25rem;
+	}
 }

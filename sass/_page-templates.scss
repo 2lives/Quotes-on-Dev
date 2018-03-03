@@ -12,40 +12,7 @@ body.home{
       font-size: 1.25rem;
     }
   }
-  .entry-meta{
-    display: flex;
-    margin-bottom: 3rem;
-    font-weight: 300;
-    h2{
-      margin: 0;
-      font-size: 1.25rem;
-    }
-    .source{
-      color: #fff;
-      font-size: 1.25rem;
-      font-style: italic;
-      a{
-        color: $color__green;
-         font-style: italic;
-        text-decoration: none;
-        font-size: 1.25rem;
-      }
-    }
-  }
-  #new-quote-button{
-    box-shadow: none;
-    text-shadow: none;
-    background-color: #222;
-    color: #0c0;
-    border-color: #0c0;
-    border-radius: 3px;
-    padding: .75rem 2.25rem;
-    font-size: 1rem;
-    &:hover{
-      border-color: darken(#0c0, 10%);
-      color: darken(#0c0, 10%);
-    }
-  }
+  
   .site-info{
     margin: 4.5rem 0 3rem;
     a{
@@ -63,9 +30,22 @@ body.page-template-default{
   h1{
     color: #fff;
   }
+  h2{
+    font-weight: bold;
+    font-size: 1.5em;
+  }
   ul{
+    display: flex;
+    flex-wrap: wrap;
     list-style:none;
     margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    li{
+      margin-bottom: .5rem;
+      margin-right: 1.125rem;
+      font-weight: 300;
+    }
   }
   a{
     text-decoration: none;
@@ -75,7 +55,7 @@ body.page-template-default{
 footer{
   padding: 2.5%;
   background-color: #222;
-  ul{
+  .menu ul{
     display: flex;
     justify-content: flex-start;
     font-size: 1rem;
@@ -84,13 +64,16 @@ footer{
     padding: 0;
     li:first-child{
       padding-left: 0;
+      margin: 0;
     }
     li:last-child{
       border-right: none;
+      margin: 0;
     }
     li{
       border-right: 1px solid #fff;
       padding: 0 1rem;
+      margin: 0px;
     }
     a{
       text-decoration: none;
@@ -99,5 +82,15 @@ footer{
   }
   p {
     margin-bottom: 0;
+    font-size: 1rem;
   }
 } 
+
+//single.php
+body.post-template-default{
+  .sitefooter{
+    a{
+    text-decoration: none;
+    }
+  }
+}

@@ -60,3 +60,15 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+#quote-submission-form{
+	display: flex;
+	flex-direction: column;
+	div{
+		display: flex;
+		flex-direction: column;
+		label{
+			color: #fff;
+		}
+	}
+}

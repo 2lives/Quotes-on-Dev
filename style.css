@@ -431,6 +431,25 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+#quote-submission-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #quote-submission-form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #quote-submission-form div label {
+      color: #fff; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -597,6 +616,11 @@ a {
   width: 100%;
   background-color: #222222; }
 
+.logo {
+  padding: 2.5%; }
+  .logo img {
+    padding: 0; }
+
 p {
   color: #fff;
   font-size: 1.25rem;
@@ -611,6 +635,40 @@ h2 {
   background-color: #222;
   width: 100%;
   padding: 2.5%; }
+
+#new-quote-button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  background-color: #222;
+  color: #0c0;
+  border-color: #0c0;
+  border-radius: 3px;
+  padding: .75rem 2.25rem;
+  font-size: 1rem; }
+  #new-quote-button:hover {
+    border-color: #009900;
+    color: #009900; }
+
+.entry-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+  font-weight: 300; }
+  .entry-meta h2 {
+    margin: 0;
+    font-size: 1.25rem; }
+
+.source {
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: italic; }
+  .source a {
+    color: #0c0;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 1.25rem; }
 
 /*--------------------------------------------------------------
 # Media
@@ -629,6 +687,38 @@ iframe,
 object {
   max-width: 100%; }
 
+@media only screen and (min-width: 620px) {
+  body.page-template-default li {
+    font-size: 1.25rem; }
+  footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    font-size: 1rem;
+    margin: 4.5rem 0 3rem; }
+    footer .site-info .menu ul {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      padding: 0; }
+      footer .site-info .menu ul li {
+        font-size: 1rem; }
+    footer .site-info p {
+      margin-top: 20px;
+      font-size: 1rem; } }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -636,39 +726,6 @@ object {
 /* Submit a Quote Page */
 body.home .entry-content p {
   font-size: 1.25rem; }
-
-body.home .entry-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 3rem;
-  font-weight: 300; }
-  body.home .entry-meta h2 {
-    margin: 0;
-    font-size: 1.25rem; }
-  body.home .entry-meta .source {
-    color: #fff;
-    font-size: 1.25rem;
-    font-style: italic; }
-    body.home .entry-meta .source a {
-      color: #0c0;
-      font-style: italic;
-      text-decoration: none;
-      font-size: 1.25rem; }
-
-body.home #new-quote-button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  background-color: #222;
-  color: #0c0;
-  border-color: #0c0;
-  border-radius: 3px;
-  padding: .75rem 2.25rem;
-  font-size: 1rem; }
-  body.home #new-quote-button:hover {
-    border-color: #009900;
-    color: #009900; }
 
 body.home .site-info {
   margin: 4.5rem 0 3rem; }
@@ -681,9 +738,24 @@ body.home .menu {
 body.page-template-default h1 {
   color: #fff; }
 
+body.page-template-default h2 {
+  font-weight: bold;
+  font-size: 1.5em; }
+
 body.page-template-default ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0; }
+  body.page-template-default ul li {
+    margin-bottom: .5rem;
+    margin-right: 1.125rem;
+    font-weight: 300; }
 
 body.page-template-default a {
   text-decoration: none; }
@@ -691,7 +763,7 @@ body.page-template-default a {
 footer {
   padding: 2.5%;
   background-color: #222; }
-  footer ul {
+  footer .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -702,15 +774,22 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0; }
-    footer ul li:first-child {
-      padding-left: 0; }
-    footer ul li:last-child {
-      border-right: none; }
-    footer ul li {
+    footer .menu ul li:first-child {
+      padding-left: 0;
+      margin: 0; }
+    footer .menu ul li:last-child {
+      border-right: none;
+      margin: 0; }
+    footer .menu ul li {
       border-right: 1px solid #fff;
-      padding: 0 1rem; }
-    footer ul a {
+      padding: 0 1rem;
+      margin: 0px; }
+    footer .menu ul a {
       text-decoration: none;
       font-weight: 300; }
   footer p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 1rem; }
+
+body.post-template-default .sitefooter a {
+  text-decoration: none; }
