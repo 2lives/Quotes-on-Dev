@@ -634,17 +634,12 @@ a {
 --------------------------------------------------------------*/
 /* Posts and pages */
 #colophon .site-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  margin: 4.5rem 0 3rem; }
   #colophon .site-info p {
-    margin-top: 0; }
-  @media only screen and (min-width: 620px) {
-    #colophon .site-info p {
-      margin-top: 20px; } }
+    margin-top: 20px; }
   @media only screen and (min-width: 1080px) {
     #colophon .site-info {
       display: -webkit-box;
@@ -652,7 +647,8 @@ a {
       display: flex;
       -webkit-box-align: end;
           -ms-flex-align: end;
-              align-items: flex-end; } }
+              align-items: flex-end;
+      padding-right: 3rem; } }
 
 .sticky {
   display: block; }
@@ -731,9 +727,7 @@ h2 {
     color: #009900; }
 
 .entry-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-bottom: 3rem;
   font-weight: 300; }
   .entry-meta h2 {
@@ -762,6 +756,12 @@ h2 {
     padding-top: 0; }
   .hfeed {
     padding: 0; } }
+
+@media only screen and (min-width: 620px) {
+  .entry-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -885,9 +885,6 @@ footer {
   body.page-template-default li {
     font-size: 1.25rem; }
   footer .site-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -900,8 +897,7 @@ footer {
             align-items: flex-start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    font-size: 1rem;
-    padding: 2.5%; }
+    font-size: 1rem; }
     footer .site-info .menu ul {
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
@@ -934,24 +930,10 @@ footer {
     font-size: 125px;
     line-height: 125px;
     position: absolute;
-    top: 0; } }
-
-body.home #content {
-  padding: 0; }
-
-body.home .entry-content p {
-  font-size: 2.5rem;
-  margin-top: 0;
-  padding: 0; }
-
-footer {
-  padding: 2.5%;
-  margin: 4.5rem 0 3rem; }
-  footer .site-info {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
+    top: 0; }
+  body.home #content {
+    padding: 0; }
+  body.home .entry-content p {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding: 0; } }

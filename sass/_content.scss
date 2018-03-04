@@ -6,19 +6,17 @@
 
 #colophon{
 	.site-info{
-		display: flex;
 		align-items: flex-start;
+		margin: 4.5rem 0 3rem;
 		p{
-			margin-top: 0;
+			margin-top: 20px;
 		}
 		@media only screen and (min-width: 620px){
-			p{
-				margin-top: 20px;
-			}
 		}
 		@media only screen and (min-width: 1080px){
 			display: flex;
 			align-items: flex-end;
+			padding-right: 3rem;
 		}
 	}
 }
@@ -118,7 +116,7 @@ h2{
 }
 
 .entry-meta{
-	display: flex;
+	display: block;
 	margin-bottom: 3rem;
 	font-weight: 300;
 	h2{
@@ -156,4 +154,10 @@ h2{
 padding: 0;
 
 }
+}
+
+@media only screen and (min-width: 620px){
+	.entry-meta{
+		display: flex;
+	}
 }
