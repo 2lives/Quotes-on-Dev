@@ -4,6 +4,25 @@
 
 /* Posts and pages */
 
+#colophon{
+	.site-info{
+		display: flex;
+		align-items: flex-start;
+		p{
+			margin-top: 0;
+		}
+		@media only screen and (min-width: 620px){
+			p{
+				margin-top: 20px;
+			}
+		}
+		@media only screen and (min-width: 1080px){
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+}
+
 .sticky {
 	display: block;
 }
@@ -130,5 +149,11 @@ h2{
 	background-color: #222;
 	width: 60%;
 	padding: 2.5%;
+	padding-top: 0;
 	}
+
+.hfeed {
+padding: 0;
+
+}
 }

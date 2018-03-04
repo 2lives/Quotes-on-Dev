@@ -7,6 +7,8 @@
 /* Submit a Quote Page */
 //index.php
 body.home{
+  background-color: #222;
+
   .entry-content{
     p{
       font-size: 1.25rem;
@@ -21,11 +23,19 @@ body.home{
   .menu{
     font-size: 1rem;
   }
+  footer{
+    margin: 0;
+    .site-info{
+      display: block;
+    }
+  }
 }
 
 //page-archives.php
 
 body.page-template-default{
+  background-color: #222;
+
   h1{
     color: #fff;
   }
@@ -102,9 +112,11 @@ footer{
 		}
 		
 		.site-info{
+      display: flex;
+      align-items: flex-start;
 			a{
 				text-decoration: none;
-			}
+      }
 		}
 		.menu{
 			font-size: 1rem;
@@ -175,11 +187,27 @@ body.page-template-default{
   }
 }
 
+body.home{
+  #content{
+    padding: 0;
+  }
+  .entry-content{
+    p{
+      font-size: 2.5rem;
+      margin-top: 0;
+      padding: 0;
+    }
+  }
+}
+
+
+
 footer{
+  padding: 2.5%;
+  margin: 4.5rem 0 3rem;
   .site-info{
     padding: 0;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 10%;
   }
 }
