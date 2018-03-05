@@ -97,6 +97,29 @@ footer{
   }
 } 
 
+//error 404 page
+body.error404{
+  h1{
+    color: #fff;
+  }
+  fieldset{
+  border: none;
+  }
+  .search-submit{
+    background-color: #222;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    .icon-search{
+      color: #0c0;
+      font-size: 1.2rem;
+    }
+  }
+  .search-field{
+    background-color: #222;
+    border-color: #0c0;
+  }
+}
 
 
 

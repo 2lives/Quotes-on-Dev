@@ -45,7 +45,6 @@ var lastpage = ''
     });//popstate
 
     $('#submission-button').on('click', function(event) {
-    
       var quoteData = {
         status: 'pending',
         title: $('#quote-author').val(),
@@ -53,27 +52,22 @@ var lastpage = ''
         _qod_quote_source: $('#quote-source').val(),
         _qod_quote_source_url: $('#quote-source-url').val()
       }
-
       event.preventDefault();
       $.ajax({
          method: 'POST',
          url: api_vars.root_url + 'wp/v2/posts/',
          data: quoteData,
-
          beforeSend: function(xhr) {
             xhr.setRequestHeader( 'X-WP-Nonce', api_vars.nonce );
          },
-
          success: function() {
            $('#quote-submission-form').hide('slow');
            $('.entry-title').after('<p>'+api_vars.success+'</p>');
          },//success
-
          error: function() {
           $('#quote-submission-form').hide('slow');
           $('.entry-title').after('<p>'+api_vars.failure+'</p>');
          }//error
-
       })//ajax
    });//submit button on click
 
