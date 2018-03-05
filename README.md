@@ -2,22 +2,16 @@
 
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 
-## Installation
+Inspired by Quotes on Design, Quotes on Dev is a theme that uses ajax to query the wordpress api. Using GET and POST requests, Quotes on Dev dynamically loads a new quote without refreshing the page and updates the wordpress posts upon quote submission. For security purposes, a nonce is also implemented. 
 
-### 1. Download me (don't clone me!)
+written in php, 
+styled with sass,
+jquery for functionality and ajax,
 
-Then add me to your `wp-content/themes` directory.
+download the theme from 
+https://github.com/2lives/Quotes-on-Dev
+ 
+ and put the folder inside "themes".
 
-### 2. Rename the `quotesondev-starter-master` directory
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
 
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
