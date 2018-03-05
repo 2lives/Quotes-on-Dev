@@ -877,14 +877,21 @@ body.error404 .search-submit {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-  border: none; }
+  border: none;
+  outline: none; }
   body.error404 .search-submit .icon-search {
     color: #0c0;
     font-size: 1.2rem; }
 
 body.error404 .search-field {
   background-color: #222;
-  border-color: #0c0; }
+  border-color: #0c0;
+  outline: none; }
+
+body.search {
+  background: #222; }
+  body.search h1 {
+    color: #fff; }
 
 @media only screen and (min-width: 620px) {
   body.home .entry-content p {

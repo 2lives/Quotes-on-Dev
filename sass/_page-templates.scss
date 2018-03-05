@@ -110,6 +110,7 @@ body.error404{
     box-shadow: none;
     text-shadow: none;
     border: none;
+    outline: none;
     .icon-search{
       color: #0c0;
       font-size: 1.2rem;
@@ -118,9 +119,16 @@ body.error404{
   .search-field{
     background-color: #222;
     border-color: #0c0;
+    outline: none;
   }
 }
-
+//search page
+body.search{
+  background: #222;
+  h1{
+    color: #fff;
+  }
+}
 
 
 
