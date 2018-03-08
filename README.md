@@ -1,4 +1,4 @@
-# Quotes on Dev Starter
+## Quotes on Dev v. 1.0
 
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 
@@ -8,10 +8,26 @@ written in php,
 styled with sass,
 jquery for functionality and ajax,
 
-download the theme from 
-https://github.com/2lives/Quotes-on-Dev
- 
- and put the folder inside "themes".
+#setup:
 
+    download the theme from: https://github.com/2lives/Quotes-on-Dev
+ 
+ `>Put the folder inside "themes".
+  
+  `>Run gulp.
+
+check out a preview below:
+
+Home page:
+-------------------
+
+<img src="/images/FireShot Capture 13 - Quotes on Dev – Just another Wor_ - http___localhost_project5_robert-c-martin_.png">
+
+Tagcloud:
+------------------
+
+<img src="/images/FireShot Capture 15 - Archives – Quotes on Dev - http___localhost_project5_archives_.png">
+
+By: Brandon Liu
 
 
